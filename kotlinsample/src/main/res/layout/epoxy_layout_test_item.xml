@@ -3,12 +3,16 @@
 
     <data>
 
+        <import type="com.airbnb.epoxy.kotlinsample.DataObject"/>
+
         <variable
             name="text"
             type="String" />
+
         <variable
-            name="temp"
-            type="String" />
+            name="dataobj"
+            type="DataObject" />
+
         <variable
             name="onClick"
             type="android.view.View.OnClickListener" />
@@ -27,6 +31,15 @@
             android:onClick="@{onClick}"
             android:text="@{text}"
             android:background="?attr/selectableItemBackground"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@{dataobj.name}"
+            android:background="?attr/selectableItemBackground"/>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

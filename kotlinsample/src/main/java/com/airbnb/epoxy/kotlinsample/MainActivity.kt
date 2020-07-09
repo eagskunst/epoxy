@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity)
-
+        val something = ""
         recyclerView = findViewById(R.id.recycler_view)
 
         // Attach the visibility tracker to the RecyclerView. This will enable visibility events.
@@ -36,12 +36,19 @@ class MainActivity : AppCompatActivity() {
                 dataBindingItem {
                     id("data binding $i")
                     text("this is a data binding model")
+
                     onClick { _ ->
                         Toast.makeText(this@MainActivity, "clicked", Toast.LENGTH_LONG).show()
                     }
                     onVisibilityStateChanged { model, view, visibilityState ->
                         Log.d(TAG, "$model -> $visibilityState")
                     }
+                }
+
+                testItem {
+                    id("test item $i")
+                    dataobj(DataObject("A string", 1))
+                    onClick { _, _, _, _ -> Toast.makeText(this@MainActivity, "Clicked test", Toast.LENGTH_SHORT).show() }
                 }
 
                 itemCustomView {
@@ -99,3 +106,5 @@ class MainActivity : AppCompatActivity() {
         private const val TAG = "MainActivity"
     }
 }
+
+data class DataObject(val name: String, val number: Int)
