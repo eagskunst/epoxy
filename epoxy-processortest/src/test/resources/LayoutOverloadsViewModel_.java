@@ -7,13 +7,10 @@ import java.lang.Number;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
-import java.util.BitSet;
 
 /**
  * Generated file. Do not modify! */
 public class LayoutOverloadsViewModel_ extends EpoxyModel<LayoutOverloadsView> implements GeneratedModel<LayoutOverloadsView>, LayoutOverloadsViewModelBuilder {
-  private final BitSet assignedAttributes_epoxyGeneratedModel = new BitSet(0);
-
   private OnModelBoundListener<LayoutOverloadsViewModel_, LayoutOverloadsView> onModelBoundListener_epoxyGeneratedModel;
 
   private OnModelUnboundListener<LayoutOverloadsViewModel_, LayoutOverloadsView> onModelUnboundListener_epoxyGeneratedModel;
@@ -106,8 +103,7 @@ public class LayoutOverloadsViewModel_ extends EpoxyModel<LayoutOverloadsView> i
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public LayoutOverloadsViewModel_ onVisibilityStateChanged(
       OnModelVisibilityStateChangedListener<LayoutOverloadsViewModel_, LayoutOverloadsView> listener) {
     onMutation();
@@ -129,8 +125,7 @@ public class LayoutOverloadsViewModel_ extends EpoxyModel<LayoutOverloadsView> i
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public LayoutOverloadsViewModel_ onVisibilityChanged(
       OnModelVisibilityChangedListener<LayoutOverloadsViewModel_, LayoutOverloadsView> listener) {
     onMutation();
@@ -227,7 +222,6 @@ public class LayoutOverloadsViewModel_ extends EpoxyModel<LayoutOverloadsView> i
     onModelUnboundListener_epoxyGeneratedModel = null;
     onModelVisibilityStateChangedListener_epoxyGeneratedModel = null;
     onModelVisibilityChangedListener_epoxyGeneratedModel = null;
-    assignedAttributes_epoxyGeneratedModel.clear();
     super.reset();
     return this;
   }
@@ -261,12 +255,12 @@ public class LayoutOverloadsViewModel_ extends EpoxyModel<LayoutOverloadsView> i
 
   @Override
   public int hashCode() {
-    int result = super.hashCode();
-    result = 31 * result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    return result;
+    int _result = super.hashCode();
+    _result = 31 * _result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    return _result;
   }
 
   @Override

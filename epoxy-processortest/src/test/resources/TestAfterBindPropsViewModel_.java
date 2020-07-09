@@ -7,13 +7,10 @@ import java.lang.Number;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
-import java.util.BitSet;
 
 /**
  * Generated file. Do not modify! */
 public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsView> implements GeneratedModel<TestAfterBindPropsView>, TestAfterBindPropsViewModelBuilder {
-  private final BitSet assignedAttributes_epoxyGeneratedModel = new BitSet(2);
-
   private OnModelBoundListener<TestAfterBindPropsViewModel_, TestAfterBindPropsView> onModelBoundListener_epoxyGeneratedModel;
 
   private OnModelUnboundListener<TestAfterBindPropsViewModel_, TestAfterBindPropsView> onModelUnboundListener_epoxyGeneratedModel;
@@ -22,12 +19,8 @@ public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsV
 
   private OnModelVisibilityChangedListener<TestAfterBindPropsViewModel_, TestAfterBindPropsView> onModelVisibilityChangedListener_epoxyGeneratedModel;
 
-  /**
-   * Bitset index: 0 */
   private boolean flag_Boolean = false;
 
-  /**
-   * Bitset index: 1 */
   private boolean flagSuper_Boolean = false;
 
   @Override
@@ -126,8 +119,7 @@ public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsV
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public TestAfterBindPropsViewModel_ onVisibilityStateChanged(
       OnModelVisibilityStateChangedListener<TestAfterBindPropsViewModel_, TestAfterBindPropsView> listener) {
     onMutation();
@@ -149,8 +141,7 @@ public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsV
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public TestAfterBindPropsViewModel_ onVisibilityChanged(
       OnModelVisibilityChangedListener<TestAfterBindPropsViewModel_, TestAfterBindPropsView> listener) {
     onMutation();
@@ -164,7 +155,6 @@ public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsV
    * @see TestAfterBindPropsView#setFlag(boolean)
    */
   public TestAfterBindPropsViewModel_ flag(boolean flag) {
-    assignedAttributes_epoxyGeneratedModel.set(0);
     onMutation();
     this.flag_Boolean = flag;
     return this;
@@ -177,10 +167,9 @@ public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsV
   /**
    * <i>Optional</i>: Default value is false
    *
-   * @see TestAfterBindPropsView#setFlagSuper(boolean)
+   * @see TestAfterBindPropsSuperView#setFlagSuper(boolean)
    */
   public TestAfterBindPropsViewModel_ flagSuper(boolean flagSuper) {
-    assignedAttributes_epoxyGeneratedModel.set(1);
     onMutation();
     this.flagSuper_Boolean = flagSuper;
     return this;
@@ -270,7 +259,6 @@ public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsV
     onModelUnboundListener_epoxyGeneratedModel = null;
     onModelVisibilityStateChangedListener_epoxyGeneratedModel = null;
     onModelVisibilityChangedListener_epoxyGeneratedModel = null;
-    assignedAttributes_epoxyGeneratedModel.clear();
     this.flag_Boolean = false;
     this.flagSuper_Boolean = false;
     super.reset();
@@ -312,14 +300,14 @@ public class TestAfterBindPropsViewModel_ extends EpoxyModel<TestAfterBindPropsV
 
   @Override
   public int hashCode() {
-    int result = super.hashCode();
-    result = 31 * result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (flag_Boolean ? 1 : 0);
-    result = 31 * result + (flagSuper_Boolean ? 1 : 0);
-    return result;
+    int _result = super.hashCode();
+    _result = 31 * _result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (flag_Boolean ? 1 : 0);
+    _result = 31 * _result + (flagSuper_Boolean ? 1 : 0);
+    return _result;
   }
 
   @Override

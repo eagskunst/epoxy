@@ -7,13 +7,10 @@ import java.lang.Number;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
-import java.util.BitSet;
 
 /**
  * Generated file. Do not modify! */
 public class DefaultPackageLayoutPatternViewModel_ extends EpoxyModel<DefaultPackageLayoutPatternView> implements GeneratedModel<DefaultPackageLayoutPatternView>, DefaultPackageLayoutPatternViewModelBuilder {
-  private final BitSet assignedAttributes_epoxyGeneratedModel = new BitSet(0);
-
   private OnModelBoundListener<DefaultPackageLayoutPatternViewModel_, DefaultPackageLayoutPatternView> onModelBoundListener_epoxyGeneratedModel;
 
   private OnModelUnboundListener<DefaultPackageLayoutPatternViewModel_, DefaultPackageLayoutPatternView> onModelUnboundListener_epoxyGeneratedModel;
@@ -107,8 +104,7 @@ public class DefaultPackageLayoutPatternViewModel_ extends EpoxyModel<DefaultPac
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public DefaultPackageLayoutPatternViewModel_ onVisibilityStateChanged(
       OnModelVisibilityStateChangedListener<DefaultPackageLayoutPatternViewModel_, DefaultPackageLayoutPatternView> listener) {
     onMutation();
@@ -130,8 +126,7 @@ public class DefaultPackageLayoutPatternViewModel_ extends EpoxyModel<DefaultPac
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public DefaultPackageLayoutPatternViewModel_ onVisibilityChanged(
       OnModelVisibilityChangedListener<DefaultPackageLayoutPatternViewModel_, DefaultPackageLayoutPatternView> listener) {
     onMutation();
@@ -219,7 +214,6 @@ public class DefaultPackageLayoutPatternViewModel_ extends EpoxyModel<DefaultPac
     onModelUnboundListener_epoxyGeneratedModel = null;
     onModelVisibilityStateChangedListener_epoxyGeneratedModel = null;
     onModelVisibilityChangedListener_epoxyGeneratedModel = null;
-    assignedAttributes_epoxyGeneratedModel.clear();
     super.reset();
     return this;
   }
@@ -253,12 +247,12 @@ public class DefaultPackageLayoutPatternViewModel_ extends EpoxyModel<DefaultPac
 
   @Override
   public int hashCode() {
-    int result = super.hashCode();
-    result = 31 * result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    return result;
+    int _result = super.hashCode();
+    _result = 31 * _result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    return _result;
   }
 
   @Override

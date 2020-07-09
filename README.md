@@ -1,6 +1,9 @@
+[![Build Status](https://travis-ci.com/airbnb/epoxy.svg?branch=master)](https://travis-ci.com/github/airbnb/epoxy)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.airbnb.android/epoxy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.airbnb.android/epoxy)
+
 # Epoxy
 
-Epoxy is an Android library for building complex screens in a RecyclerView. Models are automatically generated from custom views, databinding layouts, or [Litho](https://fblitho.com/) components via annotation processing. These models are then used in an EpoxyController to declare what items to show in the RecyclerView.
+Epoxy is an Android library for building complex screens in a RecyclerView. Models are automatically generated from custom views or databinding layouts via annotation processing. These models are then used in an EpoxyController to declare what items to show in the RecyclerView.
 
 This abstracts the boilerplate of view holders, diffing items and binding payload changes, item types, item ids, span counts, and more, in order to simplify building screens with multiple view types. Additionally, Epoxy adds support for saving view state and automatic diffing of item changes.
 
@@ -80,7 +83,7 @@ There are two main components of Epoxy:
 2. The `EpoxyController` where the models are used to describe what items to show and with what data.
 
 ### Creating Models
-Epoxy generates models for you based on your view or layout. Generated model classes are suffixed with an underscore (`_`) are are used directly in your EpoxyController classes.
+Epoxy generates models for you based on your view or layout. Generated model classes are suffixed with an underscore (`_`) are used directly in your EpoxyController classes.
 
 #### From Custom Views
 Add the `@ModelView` annotation on a view class. Then, add a "prop" annotation on each setter method to mark it as a property for the model.
@@ -271,8 +274,6 @@ If you still have questions, feel free to create a new issue.
 
 ## Min SDK
 We support a minimum SDK of 14. However, Epoxy is based on the v7 support libraries so it should work with lower versions if you care to override the min sdk level in the manifest.
-
-If you are using the [optional Litho integration](https://github.com/airbnb/epoxy/wiki/Litho-Support) then the min SDK is 15  due to Litho's SDK requirement.
 
 ## Contributing
 Pull requests are welcome! We'd love help improving this library. Feel free to browse through open issues to look for things that need work. If you have a feature request or bug, please open a new issue so we can track it.

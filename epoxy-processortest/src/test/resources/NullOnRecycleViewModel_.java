@@ -7,13 +7,10 @@ import java.lang.Number;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
-import java.util.BitSet;
 
 /**
  * Generated file. Do not modify! */
 public class NullOnRecycleViewModel_ extends EpoxyModel<NullOnRecycleView> implements GeneratedModel<NullOnRecycleView>, NullOnRecycleViewModelBuilder {
-  private final BitSet assignedAttributes_epoxyGeneratedModel = new BitSet(1);
-
   private OnModelBoundListener<NullOnRecycleViewModel_, NullOnRecycleView> onModelBoundListener_epoxyGeneratedModel;
 
   private OnModelUnboundListener<NullOnRecycleViewModel_, NullOnRecycleView> onModelUnboundListener_epoxyGeneratedModel;
@@ -22,8 +19,6 @@ public class NullOnRecycleViewModel_ extends EpoxyModel<NullOnRecycleView> imple
 
   private OnModelVisibilityChangedListener<NullOnRecycleViewModel_, NullOnRecycleView> onModelVisibilityChangedListener_epoxyGeneratedModel;
 
-  /**
-   * Bitset index: 0 */
   @Nullable
   private CharSequence title_CharSequence = (CharSequence) null;
 
@@ -117,8 +112,7 @@ public class NullOnRecycleViewModel_ extends EpoxyModel<NullOnRecycleView> imple
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public NullOnRecycleViewModel_ onVisibilityStateChanged(
       OnModelVisibilityStateChangedListener<NullOnRecycleViewModel_, NullOnRecycleView> listener) {
     onMutation();
@@ -140,8 +134,7 @@ public class NullOnRecycleViewModel_ extends EpoxyModel<NullOnRecycleView> imple
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public NullOnRecycleViewModel_ onVisibilityChanged(
       OnModelVisibilityChangedListener<NullOnRecycleViewModel_, NullOnRecycleView> listener) {
     onMutation();
@@ -155,7 +148,6 @@ public class NullOnRecycleViewModel_ extends EpoxyModel<NullOnRecycleView> imple
    * @see NullOnRecycleView#setTitle(CharSequence)
    */
   public NullOnRecycleViewModel_ title(@Nullable CharSequence title) {
-    assignedAttributes_epoxyGeneratedModel.set(0);
     onMutation();
     this.title_CharSequence = title;
     return this;
@@ -245,7 +237,6 @@ public class NullOnRecycleViewModel_ extends EpoxyModel<NullOnRecycleView> imple
     onModelUnboundListener_epoxyGeneratedModel = null;
     onModelVisibilityStateChangedListener_epoxyGeneratedModel = null;
     onModelVisibilityChangedListener_epoxyGeneratedModel = null;
-    assignedAttributes_epoxyGeneratedModel.clear();
     this.title_CharSequence = (CharSequence) null;
     super.reset();
     return this;
@@ -283,13 +274,13 @@ public class NullOnRecycleViewModel_ extends EpoxyModel<NullOnRecycleView> imple
 
   @Override
   public int hashCode() {
-    int result = super.hashCode();
-    result = 31 * result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (title_CharSequence != null ? title_CharSequence.hashCode() : 0);
-    return result;
+    int _result = super.hashCode();
+    _result = 31 * _result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (title_CharSequence != null ? title_CharSequence.hashCode() : 0);
+    return _result;
   }
 
   @Override

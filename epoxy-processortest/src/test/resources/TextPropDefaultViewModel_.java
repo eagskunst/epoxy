@@ -32,8 +32,6 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
    * Bitset index: 0 */
   private StringAttributeData textWithDefault_StringAttributeData =  new StringAttributeData(R.string.string_resource_value);
 
-  /**
-   * Bitset index: 1 */
   private StringAttributeData nullableTextWithDefault_StringAttributeData =  new StringAttributeData(R.string.string_resource_value);
 
   @Override
@@ -133,8 +131,7 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public TextPropDefaultViewModel_ onVisibilityStateChanged(
       OnModelVisibilityStateChangedListener<TextPropDefaultViewModel_, TextPropDefaultView> listener) {
     onMutation();
@@ -156,8 +153,7 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public TextPropDefaultViewModel_ onVisibilityChanged(
       OnModelVisibilityChangedListener<TextPropDefaultViewModel_, TextPropDefaultView> listener) {
     onMutation();
@@ -240,7 +236,6 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
   public TextPropDefaultViewModel_ nullableTextWithDefault(
       @Nullable CharSequence nullableTextWithDefault) {
     onMutation();
-    assignedAttributes_epoxyGeneratedModel.set(1);
     nullableTextWithDefault_StringAttributeData.setValue(nullableTextWithDefault);
     return this;
   }
@@ -254,7 +249,6 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
    */
   public TextPropDefaultViewModel_ nullableTextWithDefault(@StringRes int stringRes) {
     onMutation();
-    assignedAttributes_epoxyGeneratedModel.set(1);
     nullableTextWithDefault_StringAttributeData.setValue(stringRes);
     return this;
   }
@@ -269,7 +263,6 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
   public TextPropDefaultViewModel_ nullableTextWithDefault(@StringRes int stringRes,
       Object... formatArgs) {
     onMutation();
-    assignedAttributes_epoxyGeneratedModel.set(1);
     nullableTextWithDefault_StringAttributeData.setValue(stringRes, formatArgs);
     return this;
   }
@@ -284,7 +277,6 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
   public TextPropDefaultViewModel_ nullableTextWithDefaultQuantityRes(@PluralsRes int pluralRes,
       int quantity, Object... formatArgs) {
     onMutation();
-    assignedAttributes_epoxyGeneratedModel.set(1);
     nullableTextWithDefault_StringAttributeData.setValue(pluralRes, quantity, formatArgs);
     return this;
   }
@@ -410,14 +402,14 @@ public class TextPropDefaultViewModel_ extends EpoxyModel<TextPropDefaultView> i
 
   @Override
   public int hashCode() {
-    int result = super.hashCode();
-    result = 31 * result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (textWithDefault_StringAttributeData != null ? textWithDefault_StringAttributeData.hashCode() : 0);
-    result = 31 * result + (nullableTextWithDefault_StringAttributeData != null ? nullableTextWithDefault_StringAttributeData.hashCode() : 0);
-    return result;
+    int _result = super.hashCode();
+    _result = 31 * _result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (textWithDefault_StringAttributeData != null ? textWithDefault_StringAttributeData.hashCode() : 0);
+    _result = 31 * _result + (nullableTextWithDefault_StringAttributeData != null ? nullableTextWithDefault_StringAttributeData.hashCode() : 0);
+    return _result;
   }
 
   @Override

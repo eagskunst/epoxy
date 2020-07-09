@@ -9,13 +9,10 @@ import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.UnsupportedOperationException;
-import java.util.BitSet;
 
 /**
  * Generated file. Do not modify! */
 public class TestFieldPropModelPropViewModel_ extends EpoxyModel<TestFieldPropModelPropView> implements GeneratedModel<TestFieldPropModelPropView>, TestFieldPropModelPropViewModelBuilder {
-  private final BitSet assignedAttributes_epoxyGeneratedModel = new BitSet(1);
-
   private OnModelBoundListener<TestFieldPropModelPropViewModel_, TestFieldPropModelPropView> onModelBoundListener_epoxyGeneratedModel;
 
   private OnModelUnboundListener<TestFieldPropModelPropViewModel_, TestFieldPropModelPropView> onModelUnboundListener_epoxyGeneratedModel;
@@ -24,8 +21,6 @@ public class TestFieldPropModelPropViewModel_ extends EpoxyModel<TestFieldPropMo
 
   private OnModelVisibilityChangedListener<TestFieldPropModelPropViewModel_, TestFieldPropModelPropView> onModelVisibilityChangedListener_epoxyGeneratedModel;
 
-  /**
-   * Bitset index: 0 */
   private int value_Int = 0;
 
   @Override
@@ -131,8 +126,7 @@ public class TestFieldPropModelPropViewModel_ extends EpoxyModel<TestFieldPropMo
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public TestFieldPropModelPropViewModel_ onVisibilityStateChanged(
       OnModelVisibilityStateChangedListener<TestFieldPropModelPropViewModel_, TestFieldPropModelPropView> listener) {
     onMutation();
@@ -154,8 +148,7 @@ public class TestFieldPropModelPropViewModel_ extends EpoxyModel<TestFieldPropMo
    * <p>
    * The listener will contribute to this model's hashCode state per the {@link
    * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
-   * <p>
-   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+   */
   public TestFieldPropModelPropViewModel_ onVisibilityChanged(
       OnModelVisibilityChangedListener<TestFieldPropModelPropViewModel_, TestFieldPropModelPropView> listener) {
     onMutation();
@@ -169,7 +162,6 @@ public class TestFieldPropModelPropViewModel_ extends EpoxyModel<TestFieldPropMo
    * @see TestFieldPropModelPropView#value
    */
   public TestFieldPropModelPropViewModel_ value(int value) {
-    assignedAttributes_epoxyGeneratedModel.set(0);
     onMutation();
     this.value_Int = value;
     return this;
@@ -258,7 +250,6 @@ public class TestFieldPropModelPropViewModel_ extends EpoxyModel<TestFieldPropMo
     onModelUnboundListener_epoxyGeneratedModel = null;
     onModelVisibilityStateChangedListener_epoxyGeneratedModel = null;
     onModelVisibilityChangedListener_epoxyGeneratedModel = null;
-    assignedAttributes_epoxyGeneratedModel.clear();
     this.value_Int = 0;
     super.reset();
     return this;
@@ -296,13 +287,13 @@ public class TestFieldPropModelPropViewModel_ extends EpoxyModel<TestFieldPropMo
 
   @Override
   public int hashCode() {
-    int result = super.hashCode();
-    result = 31 * result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
-    result = 31 * result + value_Int;
-    return result;
+    int _result = super.hashCode();
+    _result = 31 * _result + (onModelBoundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelUnboundListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityStateChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + (onModelVisibilityChangedListener_epoxyGeneratedModel != null ? 1 : 0);
+    _result = 31 * _result + value_Int;
+    return _result;
   }
 
   @Override
